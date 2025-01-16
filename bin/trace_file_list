@@ -1,0 +1,5 @@
+1
+../sst-unit-test/traces/x86/mergesort.txt
+../../../traces_macsim/srad-8-25M/trace.txt
+../sst-unit-test/traces/x86/mergesort.txt
+../../../traces_macsim/bc-8-8M/trace.txt

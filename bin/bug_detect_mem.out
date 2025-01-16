@@ -1,0 +1,13 @@
+== Core 0 ==
+ID                   IN_TIME    DELTA      TYPE            STATE           MERGED  MERGED_ID            MERGED_TYPE     MERGED_STATE   
+35                   1          17499      IFETCH          MEM_IN_NOC      0       -1                   NULL            (null)         
+
+== Core 1 ==
+ID                   IN_TIME    DELTA      TYPE            STATE           MERGED  MERGED_ID            MERGED_TYPE     MERGED_STATE   
+
+== Core 2 ==
+ID                   IN_TIME    DELTA      TYPE            STATE           MERGED  MERGED_ID            MERGED_TYPE     MERGED_STATE   
+
+== Core 3 ==
+ID                   IN_TIME    DELTA      TYPE            STATE           MERGED  MERGED_ID            MERGED_TYPE     MERGED_STATE   
+

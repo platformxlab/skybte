@@ -1,0 +1,37 @@
+8|16|24|32|40|48
+
+bc            
+SSD Bandwidth  0.034 1.665 2.098 2.341 2.534 2.634
+DRAM Bandwidth 2.378 1.421 1.069 0.843 0.657 0.537
+
+bfs-dense     
+SSD Bandwidth  0.078 0.102 0.146 0.172 0.200 0.209
+DRAM Bandwidth 0.396 0.510 0.732 0.858 1.004 1.048
+
+dlrm          
+SSD Bandwidth  0.496 0.737 0.832 0.699 0.664 0.661
+DRAM Bandwidth 0.875 1.415 1.428 1.363 1.364 1.358
+
+radix         
+SSD Bandwidth  0.116  1.586 0.785 1.044 1.223 1.344
+DRAM Bandwidth 0.538   0 0.802 0.574 0.414 0.305
+
+srad          
+SSD Bandwidth  0.523 0.896   1.691   1.958 1.789 1.808
+DRAM Bandwidth 0.522 0.441   0   0 0.171 0.166
+
+tpcc          
+SSD Bandwidth  0.268   0.907 0.687 0.730 0.752 0.788
+DRAM Bandwidth 0.411   0 0.221 0.185 0.163 0.126
+
+ycsb-a        
+SSD Bandwidth  0.255 1.046 1.285 1.410 1.436 1.475
+DRAM Bandwidth 1.244 0.664 0.419 0.290 0.265 0.260
+
+ycsb-b        
+SSD Bandwidth  0.234   1.552  1.643  1.719 1.318 1.358
+DRAM Bandwidth 0.873   0   0   0 0.398 0.368
+
+average        
+SSD Bandwidth  1   1.403 1.549 1.608 1.651 1.665
+DRAM Bandwidth 0  0   0   0 0 0

@@ -1,0 +1,32 @@
+file /users/haoyoung/LSSD/SConstruct,line 55:
+	Configure(confdir = .sconf_temp)
+scons: Configure: Checking for c++14 conformance...
+scons: Configure: ".sconf_temp/conftest_7d8c217bde5c726b6344dda4487440bd_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_7d8c217bde5c726b6344dda4487440bd_0.cpp <-
+  |  |
+  |  |    #include <vector>
+  |  |    #include <iostream>
+  |  |    #include <memory>
+  |  |  
+  |  |    using namespace std;
+  |  |
+  |  |    int main(void)
+  |  |    {
+  |  |      vector<int> test_vector(5);
+  |  |      int sum = 0;
+  |  |      for (auto itr = test_vector.begin(); itr != test_vector.end(); ++itr) {
+  |  |        sum += (*itr);
+  |  |      }
+  |  |      cout << sum;
+  |  |
+  |  |      unique_ptr<int> test_int = make_unique<int>(2347);
+  |  |      cout << *test_int;
+  |  |    }
+  |  |    
+  |
+g++ -o .sconf_temp/conftest_7d8c217bde5c726b6344dda4487440bd_0_c8f1c8f767a58523beeb75c0fbcf6220.o -c -std=c++14 .sconf_temp/conftest_7d8c217bde5c726b6344dda4487440bd_0.cpp
+cc1plus: fatal error: .sconf_temp/conftest_7d8c217bde5c726b6344dda4487440bd_0.cpp: No such file or directory
+compilation terminated.
+scons: Configure: no
+

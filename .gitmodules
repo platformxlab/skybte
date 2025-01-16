@@ -1,0 +1,6 @@
+[submodule "macsim_x86trace"]
+	path = macsim_x86trace
+	url = git@github.com:HieronZhang/macsim_x86trace.git
+[submodule "figure_drawing/pyplotter"]
+	path = figure_drawing/pyplotter
+	url = git@github.com:0-EricZhou-0/pyplotter.git

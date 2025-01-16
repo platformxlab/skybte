@@ -1,0 +1,339 @@
+GNU gdb (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+Copyright (C) 2022 Free Software Foundation, Inc.
+License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+This is free software: you are free to change and redistribute it.
+There is NO WARRANTY, to the extent permitted by law.
+Type "show copying" and "show warranty" for details.
+This GDB was configured as "x86_64-linux-gnu".
+Type "show configuration" for configuration details.
+For bug reporting instructions, please see:
+<https://www.gnu.org/software/gdb/bugs/>.
+Find the GDB manual and other documentation resources online at:
+    <http://www.gnu.org/software/gdb/documentation/>.
+
+For help, type "help".
+Type "apropos word" to search for commands related to "word"...
+Reading symbols from ./macsim...
+[?2004h(gdb) r
+[?2004lStarting program: /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/bin/macsim -b /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/configs/baselines/assd-Full.config -w /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/configs/workloads/bc-8.config -o /dev/pts/6 -p -f test
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/lib/x86_64-linux-gnu/libthread_db.so.1".
+[New Thread 0x7fff5d363640 (LWP 535813)]
+[New Thread 0x7fff5cb62640 (LWP 535814)]
+[New Thread 0x7fff5c361640 (LWP 535815)]
+TSC frequency 3000000 kHz (3.000000 GHz) detected
+
+Configs:
+           promotion_enable: <1>
+           write_log_enable: <1>
+   device_triggered_ctx_swt: <1>
+               cs_threshold: <4500>
+        ssd_cache_size_byte: <402653184>
+              ssd_cache_way: <16>
+        host_dram_size_byte: <2147483648>
+
+Configs:
+             trace_location: <../../traces/tpcc_trace/pinatrace.out.>
+                  num_files: <8>
+        num_initial_threads: <8>
+               scale_factor: <55>
+No setting config files, using default values
+Filename: ../../traces/tpcc_trace/pinatrace.out.0
+Filename: ../../traces/tpcc_trace/pinatrace.out.1
+Filename: ../../traces/tpcc_trace/pinatrace.out.2
+Filename: ../../traces/tpcc_trace/pinatrace.out.3
+Filename: ../../traces/tpcc_trace/pinatrace.out.4
+Filename: ../../traces/tpcc_trace/pinatrace.out.5
+Filename: ../../traces/tpcc_trace/pinatrace.out.6
+Filename: ../../traces/tpcc_trace/pinatrace.out.7
+[BYTEFS Log]:   SSD init BEGIN
+[BYTEFS Log]:   Init para
+[BYTEFS Log]:   ByteFS init maptbl
+[BYTEFS Log]:   ByteFS init remap
+[BYTEFS Log]:   ByteFS init GC facility
+[BYTEFS Log]:   ByteFS init wp
+[BYTEFS Log]:   ByteFS init all queues
+[BYTEFS Log]:   ByteFS init backend
+[BYTEFS Log]:   vir_loc 140734761549840
+[BYTEFS Log]:   ByteFS init in device log buffer
+[BYTEFS Log]:   ByteFS start threads
+[BYTEFS Log]:   ftl thread: start time 0
+[BYTEFS Log]:   Creating ftl thread
+[BYTEFS Log]:   Initizing 1 log writer threads
+[BYTEFS Log]:   Creating log writer #0 thread
+[BYTEFS Log]:   Initizing 1 promotion threads
+[BYTEFS Log]:   Creating promotion #0 thread
+[BYTEFS Log]:   SSD init END
+[BYTEFS Log]:   Data fill BEGIN
+94914306748416
+140721333481472
+[New Thread 0x7fff5b996640 (LWP 535826)]
+Scheduler thread ready!
+Scheduler service thread CPU: 0, time quanta: 100000 ns (100.000 us), initializing
+Scheduler service thread initialized
+[BYTEFS Log]:   Scheduler_2 online
+Arguments: /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/bin/macsim -b /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/configs/baselines/assd-Full.config -w /home/haoyang/Code_repos/Skybyte-Sim-dev/LSSD/configs/workloads/bc-8.config -o /dev/pts/6 -p -f test 
+src/macsim.cc:134: (I=0  C=0):  initialize knobs
+number of cores : 4
+src/macsim.cc:549: (I=0  C=0):  initialize simulation
+src/macsim.cc:333: (I=0  C=0):  initialize cores (4/0/0)
+src/exec.cc:159: (I=0  C=0):  UOP latency mapped to Skylake
+src/exec.cc:159: (I=0  C=0):  UOP latency mapped to Skylake
+src/exec.cc:159: (I=0  C=0):  UOP latency mapped to Skylake
+src/exec.cc:159: (I=0  C=0):  UOP latency mapped to Skylake
+src/memory.cc:1576: (I=0  C=0):  Memory system(llc_decoupled_network) has been initialized.
+src/network_ring.cc:94: (I=0  C=0):  TOTAL_ROUTER:14 CPU:4 GPU:0 L3:1 LLC:8 MC:1
+src/network_ring.cc:284: (I=0  C=0):  RING topology
+0 <-> 1 <-> 2 <-> 3 <-> 4 <-> 5 <-> 6 <-> 7 <-> 8 <-> 9 <-> 10 <-> 11 <-> 12 <-> 13 <-> 
+enabling bug detector
+src/macsim.cc:762: (I=0  C=0):  Initializing new noc
+
+src/macsim.cc:850: (I=0  C=0):  Clock LCM           : 40
+src/macsim.cc:851: (I=0  C=0):  CPU clock frequency : 4 GHz
+src/macsim.cc:852: (I=0  C=0):  GPU clock frequency : 4 GHz
+src/macsim.cc:853: (I=0  C=0):  LLC clock frequency : 1 GHz
+src/macsim.cc:854: (I=0  C=0):  NOC clock frequency : 1 GHz
+src/macsim.cc:855: (I=0  C=0):  MC  clock frequency : 0.8 GHz
+src/process_manager.cc:430: (I=0  C=0):  setup_process:0 ../../../traces_macsim/srad-8-25M/trace.txt current_index:0 (1)
+trace:../../../traces_macsim/srad-8-25M/trace.txt is opened 
+src/process_manager.cc:541: (I=0  C=0):  thread_count:8
+Pushed back new thread to the thread queue:0
+Sim thread schedule: core_id: 0
+Sim thread schedule: 'trace_to_run'_id: 0
+Unique Thread ID: 0
+Filename: ../../../traces_macsim/srad-8-25M/trace_0.raw Opened.
+Sim thread schedule: core_id: 1
+Trace size = 80
+Pushed back new thread to the thread queue:1
+Sim thread schedule: core_id: 1
+Sim thread schedule: 'trace_to_run'_id: 1
+Unique Thread ID: 1
+Filename: ../../../traces_macsim/srad-8-25M/trace_1.raw Opened.
+Sim thread schedule: core_id: 2
+Pushed back new thread to the thread queue:2
+Sim thread schedule: core_id: 2
+Sim thread schedule: 'trace_to_run'_id: 2
+Unique Thread ID: 2
+Filename: ../../../traces_macsim/srad-8-25M/trace_2.raw Opened.
+Sim thread schedule: core_id: 3
+Pushed back new thread to the thread queue:3
+Sim thread schedule: core_id: 3
+Sim thread schedule: 'trace_to_run'_id: 3
+Unique Thread ID: 3
+Filename: ../../../traces_macsim/srad-8-25M/trace_3.raw Opened.
+Pushed back new thread to the thread queue:4
+Pushed back new thread to the thread queue:5
+Pushed back new thread to the thread queue:6
+Pushed back new thread to the thread queue:7
+Trace size = 80
+Trace size = 80
+Trace size = 80
+### Context Switch generated ###, for core: 2, mem_req:9
+### Context Switch generated ###, for core: 2, mem_req:13
+### Context Switch generated ###, for core: 2, mem_req:14
+### Context Switch generated ###, for core: 0, mem_req:21
+Context switch request received at LLC side!, for memory request: 9, at core 2
+Current frontend tid: 0 Current precise interrupt trigger uop nuique num: 6
+Doing precise interrupt, number of insts withdraw: 55
+Now yield the thread : 0
+Pushed back new thread to the thread queue:2
+Yield thread happened! core id: 2, unique thread id: 2, current running thread num: 0
+Sim thread schedule: core_id: 2
+Sim thread schedule: 'trace_to_run'_id: 4
+Unique Thread ID: 4
+Filename: ../../../traces_macsim/srad-8-25M/trace_4.raw Opened.
+Trace size = 80
+Context switch request received at LLC side!, for memory request: 13, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 0
+Context switch request received at LLC side!, for memory request: 14, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 0
+### Context Switch generated ###, for core: 1, mem_req:24
+### Context Switch generated ###, for core: 1, mem_req:27
+### Context Switch generated ###, for core: 1, mem_req:28
+Context switch request received at LLC side!, for memory request: 21, at core 0
+Current frontend tid: 0 Current precise interrupt trigger uop nuique num: 29
+Doing precise interrupt, number of insts withdraw: 56
+Now yield the thread : 0
+Pushed back new thread to the thread queue:0
+Yield thread happened! core id: 0, unique thread id: 0, current running thread num: 0
+Sim thread schedule: core_id: 0
+Sim thread schedule: 'trace_to_run'_id: 5
+Unique Thread ID: 5
+Filename: ../../../traces_macsim/srad-8-25M/trace_5.raw Opened.
+Trace size = 80
+### Context Switch generated ###, for core: 2, mem_req:30
+Context switch request received at LLC side!, for memory request: 27, at core 1
+Current frontend tid: 0 Current precise interrupt trigger uop nuique num: 52
+Doing precise interrupt, number of insts withdraw: 57
+Now yield the thread : 0
+Pushed back new thread to the thread queue:1
+Yield thread happened! core id: 1, unique thread id: 1, current running thread num: 0
+Sim thread schedule: core_id: 1
+Sim thread schedule: 'trace_to_run'_id: 6
+Unique Thread ID: 6
+Filename: ../../../traces_macsim/srad-8-25M/trace_6.raw Opened.
+Trace size = 80
+Context switch request received at LLC side!, for memory request: 24, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 1 trigger uop's tid: 0
+Context switch request received at LLC side!, for memory request: 28, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 1 trigger uop's tid: 0
+### Context Switch generated ###, for core: 0, mem_req:33
+Context switch request received at LLC side!, for memory request: 30, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 0
+### Context Switch generated ###, for core: 1, mem_req:35
+### Context Switch generated ###, for core: 1, mem_req:36
+Context switch request received at LLC side!, for memory request: 33, at core 0
+Redundant precise interrupt at core 0 current frontend tid: 1 trigger uop's tid: 0
+Context switch request received at LLC side!, for memory request: 35, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 1 trigger uop's tid: 0
+Context switch request received at LLC side!, for memory request: 36, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 1 trigger uop's tid: 0
+### Context Switch generated ###, for core: 2, mem_req:47
+### Context Switch generated ###, for core: 2, mem_req:44
+### Context Switch generated ###, for core: 3, mem_req:48
+### Context Switch generated ###, for core: 0, mem_req:54
+Context switch request received at LLC side!, for memory request: 47, at core 2
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 77
+Doing precise interrupt, number of insts withdraw: 56
+Now yield the thread : 1
+Pushed back new thread to the thread queue:4
+Yield thread happened! core id: 2, unique thread id: 4, current running thread num: 0
+Sim thread schedule: core_id: 2
+Sim thread schedule: 'trace_to_run'_id: 7
+Unique Thread ID: 7
+Filename: ../../../traces_macsim/srad-8-25M/trace_7.raw Opened.
+Trace size = 80
+Context switch request received at LLC side!, for memory request: 44, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 2 trigger uop's tid: 1
+Context switch request received at LLC side!, for memory request: 48, at core 3
+Current frontend tid: 0 Current precise interrupt trigger uop nuique num: 5
+Doing precise interrupt, number of insts withdraw: 48
+Now yield the thread : 0
+Pushed back new thread to the thread queue:3
+Yield thread happened! core id: 3, unique thread id: 3, current running thread num: 0
+Sim thread schedule: core_id: 3
+Sim thread schedule: 'trace_to_run'_id: 2
+Context switch request received at LLC side!, for memory request: 54, at core 0
+Redundant precise interrupt at core 0 current frontend tid: 1 trigger uop's tid: 0
+### Context Switch generated ###, for core: 2, mem_req:58
+### Context Switch generated ###, for core: 2, mem_req:59
+### Context Switch generated ###, for core: 1, mem_req:62
+### Context Switch generated ###, for core: 1, mem_req:65
+### Context Switch generated ###, for core: 0, mem_req:74
+### Context Switch generated ###, for core: 0, mem_req:71
+Context switch request received at LLC side!, for memory request: 58, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 2 trigger uop's tid: 1
+Context switch request received at LLC side!, for memory request: 59, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 2 trigger uop's tid: 1
+Context switch request received at LLC side!, for memory request: 62, at core 1
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 125
+Doing precise interrupt, number of insts withdraw: 76
+Now yield the thread : 1
+Pushed back new thread to the thread queue:6
+Yield thread happened! core id: 1, unique thread id: 6, current running thread num: 0
+Sim thread schedule: core_id: 1
+Sim thread schedule: 'trace_to_run'_id: 0
+Context switch request received at LLC side!, for memory request: 65, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 2 trigger uop's tid: 1
+Context switch request received at LLC side!, for memory request: 74, at core 0
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 128
+Doing precise interrupt, number of insts withdraw: 57
+Now yield the thread : 1
+Pushed back new thread to the thread queue:5
+Yield thread happened! core id: 0, unique thread id: 5, current running thread num: 0
+Sim thread schedule: core_id: 0
+Sim thread schedule: 'trace_to_run'_id: 1
+Context switch request received at LLC side!, for memory request: 71, at core 0
+Redundant precise interrupt at core 0 current frontend tid: 2 trigger uop's tid: 1
+### Context Switch generated ###, for core: 2, mem_req:77
+### Context Switch generated ###, for core: 0, mem_req:86
+Context switch request received at LLC side!, for memory request: 77, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 2 trigger uop's tid: 1
+### Context Switch generated ###, for core: 2, mem_req:87
+Context switch request received at LLC side!, for memory request: 86, at core 0
+Redundant precise interrupt at core 0 current frontend tid: 2 trigger uop's tid: 1
+### Context Switch generated ###, for core: 2, mem_req:89
+### Context Switch generated ###, for core: 2, mem_req:91
+Context switch request received at LLC side!, for memory request: 87, at core 2
+Current frontend tid: 2 Current precise interrupt trigger uop nuique num: 142
+Doing precise interrupt, number of insts withdraw: 55
+Now yield the thread : 2
+Pushed back new thread to the thread queue:7
+Yield thread happened! core id: 2, unique thread id: 7, current running thread num: 0
+Sim thread schedule: core_id: 2
+Sim thread schedule: 'trace_to_run'_id: 4
+Lol, already mapped to this core once, thread id 4 is unique thread 1
+Context switch request received at LLC side!, for memory request: 89, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 2
+Context switch request received at LLC side!, for memory request: 91, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 2
+### Context Switch generated ###, for core: 2, mem_req:93
+### Context Switch generated ###, for core: 2, mem_req:96
+Context switch request received at LLC side!, for memory request: 93, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 2
+Context switch request received at LLC side!, for memory request: 96, at core 2
+Redundant precise interrupt at core 2 current frontend tid: 1 trigger uop's tid: 2
+### Context Switch generated ###, for core: 2, mem_req:99
+Context switch request received at LLC side!, for memory request: 99, at core 2
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 0
+No matched uop found, abort this one!
+### Context Switch generated ###, for core: 3, mem_req:100
+Context switch request received at LLC side!, for memory request: 100, at core 3
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 55
+Doing precise interrupt, number of insts withdraw: 75
+Now yield the thread : 1
+Pushed back new thread to the thread queue:2
+Yield thread happened! core id: 3, unique thread id: 2, current running thread num: 0
+Sim thread schedule: core_id: 3
+Sim thread schedule: 'trace_to_run'_id: 3
+Lol, already mapped to this core once, thread id 3 is unique thread 0
+### Context Switch generated ###, for core: 1, mem_req:116
+### Context Switch generated ###, for core: 1, mem_req:118
+Context switch request received at LLC side!, for memory request: 116, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 2 trigger uop's tid: 1
+Context switch request received at LLC side!, for memory request: 118, at core 1
+Redundant precise interrupt at core 1 current frontend tid: 2 trigger uop's tid: 1
+### Context Switch generated ###, for core: 2, mem_req:161
+Context switch request received at LLC side!, for memory request: 161, at core 2
+Current frontend tid: 1 Current precise interrupt trigger uop nuique num: 689
+Doing precise interrupt, number of insts withdraw: 48
+Now yield the thread : 1
+Pushed back new thread to the thread queue:4
+Yield thread happened! core id: 2, unique thread id: 4, current running thread num: 0
+Sim thread schedule: core_id: 2
+Sim thread schedule: 'trace_to_run'_id: 6
+
+Thread 1 "macsim" received signal SIGSEGV, Segmentation fault.
+0x0000000000514c30 in std::_Hashtable<unsigned long long, std::pair<unsigned long long const, uop_c>, std::allocator<std::pair<unsigned long long const, uop_c> >, std::__detail::_Select1st, std::equal_to<unsigned long long>, std::hash<unsigned long long>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index (__c=<optimized out>, this=<optimized out>) at /usr/include/c++/11/bits/hashtable.h:795
+795	      { return __hash_code_base::_M_bucket_index(__c, _M_bucket_count); }
+[?2004h[?2004l[?2004h(gdb) bt
+[?2004l#0  0x0000000000514c30 in std::_Hashtable<unsigned long long, std::pair<unsigned long long const, uop_c>, std::allocator<std::pair<unsigned long long const, uop_c> >, std::__detail::_Select1st, std::equal_to<unsigned long long>, std::hash<unsigned long long>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::_M_bucket_index (__c=<optimized out>, this=<optimized out>)
+    at /usr/include/c++/11/bits/hashtable.h:795
+#1  std::_Hashtable<unsigned long long, std::pair<unsigned long long const, uop_c>, std::allocator<std::pair<unsigned long long const, uop_c> >, std::__detail::_Select1st, std::equal_to<unsigned long long>, std::hash<unsigned long long>, std::__detail::_Mod_range_hashing, std::__detail::_Default_ranged_hash, std::__detail::_Prime_rehash_policy, std::__detail::_Hashtable_traits<false, false, true> >::find (__k=<optimized out>, this=<optimized out>)
+    at /usr/include/c++/11/bits/hashtable.h:1594
+#2  std::unordered_map<unsigned long long, uop_c, std::hash<unsigned long long>, std::equal_to<unsigned long long>, std::allocator<std::pair<unsigned long long const, uop_c> > >::find (__x=<optimized out>, this=<optimized out>) at /usr/include/c++/11/bits/unordered_map.h:869
+#3  retire_c::run_a_cycle (this=0x21cbca90) at src/retire.cc:374
+#4  0x00000000004c0cbb in core_c::run_a_cycle (this=this@entry=0x21b8dcd0, pll_lock=pll_lock@entry=false) at src/core.cc:397
+#5  0x00000000004e4277 in macsim_c::run_a_cycle (this=this@entry=0x2186eaf0) at src/macsim.cc:984
+#6  0x0000000000436941 in main (argc=10, argv=0x7fffffffd478) at src/main.cc:629
+[?2004h(gdb) frame 3
+[?2004l#3  retire_c::run_a_cycle (this=0x21cbca90) at src/retire.cc:374
+374	        if(m_simBase->m_core_pointers[cur_uop->m_core_id]->get_trace_info(cur_uop->m_thread_id)->fetched_uop_map.find(cur_uop->m_unique_num) != m_simBase->m_core_pointers[cur_uop->m_core_id]->get_trace_info(cur_uop->m_thread_id)->fetched_uop_map.end()){
+[?2004h(gdb) p cur_uop->m_core_id
+[?2004l$1 = 1
+[?2004h(gdb) p cur_uop->m_thread_id
+[?2004l$2 = 3
+[?2004h(gdb) p m_simBase->m_core_pointers[cur_uop->m_core_id]->m_unique_scheduled_thread_num
+[?2004l$3 = 4
+[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 535809] will be killed.
+
+Quit anyway? (y or n) c[?2004l[?2004h(gdb) q
+[?2004l[?2004hA debugging session is active.
+
+	Inferior 1 [process 535809] will be killed.
+
+Quit anyway? (y or n) y
+[?2004l

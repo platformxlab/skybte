@@ -1,0 +1,36 @@
+Current cycle:69999
+Core id:0
+Last terminated thread:0
+----------------------------------------------------------
+core 0
+average execution cycle: 18
+INST_NUM  UOP_NUM   TID       CYCLE          DELTA          STATE                    OPCODE                   UOP_TYPE            MEM_TYPE            MEM_ADDR            CF_TYPE             DEP_TYPE            CHILD PARENT    
+
+
+Current cycle:69999
+Core id:0
+Last terminated thread:0
+----------------------------------------------------------
+core 1
+average execution cycle: 0
+INST_NUM  UOP_NUM   TID       CYCLE          DELTA          STATE                    OPCODE                   UOP_TYPE            MEM_TYPE            MEM_ADDR            CF_TYPE             DEP_TYPE            CHILD PARENT    
+
+
+Current cycle:69999
+Core id:0
+Last terminated thread:0
+----------------------------------------------------------
+core 2
+average execution cycle: 0
+INST_NUM  UOP_NUM   TID       CYCLE          DELTA          STATE                    OPCODE                   UOP_TYPE            MEM_TYPE            MEM_ADDR            CF_TYPE             DEP_TYPE            CHILD PARENT    
+
+
+Current cycle:69999
+Core id:0
+Last terminated thread:0
+----------------------------------------------------------
+core 3
+average execution cycle: 0
+INST_NUM  UOP_NUM   TID       CYCLE          DELTA          STATE                    OPCODE                   UOP_TYPE            MEM_TYPE            MEM_ADDR            CF_TYPE             DEP_TYPE            CHILD PARENT    
+
+
