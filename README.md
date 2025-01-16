@@ -18,7 +18,7 @@ Use the following command to download the artifact:
 # wget https://zenodo.org/records/14660185/files/SkyByte-Artifact.tar.gz
 
 # To Download from Github
-git clone git@github.com:HieronZhang/SkyByte-Artifact.git
+git clone git@github.com:platformxlab/skybyte.git
 ```
 
 ### 1.2 Installation
